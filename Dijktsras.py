@@ -14,7 +14,6 @@ class Dijkstras:
             self.prev.append(None)
 
     def compute(self, source):
-
         self.dist[source] = 0
         priorityQueue = self.PriorityQueue(self.dist)
         priorityQueue.makeQueue(self.network.getNodes())
